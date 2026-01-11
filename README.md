@@ -17,6 +17,7 @@ Exemple output
 <table>
     <td><img src="./example/screenshot_output.png"></td></tr>
 </table>
+
 ---
 
 ## 🧠 Fonctionnement général
