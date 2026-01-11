@@ -39,6 +39,11 @@ Pour chaque sujet, l’application propose :
 │── .streamlit/
 │ └── secrets.toml
 
+<table>
+    <tr><td><img src="./screenshot.png"></td></tr>
+</table>
+<br>
+
 ## 🔐 Configuration
 Créer le fichier suivant :
 
