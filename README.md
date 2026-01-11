@@ -11,7 +11,7 @@ Pour chaque sujet, l’application propose :
 
 ### Captures d'écran
 <img src="./screenshot.png">
-#### Exemple output
+Exemple output
 <img src="./example/screenshot_output.png">
 
 ---
