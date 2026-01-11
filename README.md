@@ -10,10 +10,13 @@ Pour chaque sujet, l’application propose :
 - les technologies recommandées.
 
 ### Captures d'écran
-<img src="./screenshot.png">
+<table>
+    <tr><td><img src="./screenshot.png"></td>
+</table>
 Exemple output
-<img src="./example/screenshot_output.png">
-
+<table>
+    <td><img src="./example/screenshot_output.png"></td></tr>
+</table>
 ---
 
 ## 🧠 Fonctionnement général
