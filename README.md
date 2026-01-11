@@ -48,21 +48,22 @@ Pour chaque sujet, l’application propose :
 Créer le fichier suivant :
 
 ### `.streamlit/secrets.toml`
-    ```toml
-    HF_API_KEY = "votre_cle_api_huggingface"
-    ```
+```toml
+HF_API_KEY = "votre_cle_api_huggingface"
+```
 ## Installation et exécution
 
 ### 1. Récupérer le code :
-    ```sh
-    $ git clone https://github.com/streamlit/project-idea-generator.git
-    ```
-### 2. Créer un environnement virtuel et installer les dépendances :
-    ```sh
-    venv\Scripts\Activate.ps1 
-    pip install -r requirements.txt
-    ```
+```sh
+$ git clone https://github.com/streamlit/project-idea-generator.git
+```
+### 2. Créer et activer l'environnement virtuel et installer les dépendances :
+```sh
+python -m venv venv
+venv\Scripts\Activate.ps1 
+pip install -r requirements.txt
+```
 ### 3. Lancer l’application
-    ```sh
-    streamlit run
-    ```
+```sh
+streamlit run
+```
