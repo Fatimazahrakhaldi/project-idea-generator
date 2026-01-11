@@ -11,7 +11,8 @@ Pour chaque sujet, l’application propose :
 
 ### Capture d'écran : 
 <table>
-    <tr><td><img src="./screenshot.png"></td></tr>
+    <tr><td><img src="./screenshot.png"></td>
+    <td><img src="./example/screenshot_output.png"></td></tr>
 </table>
 
 ---
