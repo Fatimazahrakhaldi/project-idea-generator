@@ -15,7 +15,7 @@ Pour chaque sujet, l’application propose :
 </table>
 Exemple output
 <table>
-    <td><img src="./example/screenshot_output.png"></td></tr>
+    <td><img src="./example/output.png"></td></tr>
 </table>
 
 ---
