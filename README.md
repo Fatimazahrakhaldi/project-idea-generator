@@ -30,13 +30,13 @@ Pour chaque sujet, l’application propose :
 ---
 
 ## 📂 Structure du projet
-📁 generateur-projets-genai
-│── streamlit_app.py
-│── README.md
-│── screenshot.png
-│── requirements.txt
-│── .gitignore
-│── .streamlit/
+📁 generateur-projets-genai <br>
+│── streamlit_app.py <br>
+│── README.md <br>
+│── screenshot.png <br>
+│── requirements.txt <br>
+│── .gitignore <br>
+│── .streamlit/ <br>
 │ └── secrets.toml
 
 <table>
@@ -48,23 +48,21 @@ Pour chaque sujet, l’application propose :
 Créer le fichier suivant :
 
 ### `.streamlit/secrets.toml`
-```toml
-HF_API_KEY = "votre_cle_api_huggingface"
-
+    ```toml
+    HF_API_KEY = "votre_cle_api_huggingface"
+    ```
 ## Installation et exécution
 
-1. Récupérer le code :
-
-   ```sh
-   $ git clone https://github.com/streamlit/project-idea-generator.git
-   ```
-
-2. Créer un environnement virtuel et installer les dépendances :
+### 1. Récupérer le code :
+    ```sh
+    $ git clone https://github.com/streamlit/project-idea-generator.git
+    ```
+### 2. Créer un environnement virtuel et installer les dépendances :
     ```sh
     venv\Scripts\Activate.ps1 
     pip install -r requirements.txt
     ```
-3. Lancer l’application
+### 3. Lancer l’application
     ```sh
     streamlit run
     ```
