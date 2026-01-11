@@ -9,6 +9,11 @@ Pour chaque sujet, l’application propose :
 - un niveau de complexité (Débutant / Intermédiaire / Avancé),
 - les technologies recommandées.
 
+### Capture d'écran : 
+<table>
+    <tr><td><img src="./screenshot.png"></td></tr>
+</table>
+
 ---
 
 ## 🧠 Fonctionnement général
@@ -30,7 +35,7 @@ Pour chaque sujet, l’application propose :
 ---
 
 ## 📂 Structure du projet
-📁 generateur-projets-genai <br>
+📁 project-idea-generator <br>
 │── streamlit_app.py <br>
 │── README.md <br>
 │── screenshot.png <br>
@@ -38,11 +43,6 @@ Pour chaque sujet, l’application propose :
 │── .gitignore <br>
 │── .streamlit/ <br>
 │ └── secrets.toml
-
-<table>
-    <tr><td><img src="./screenshot.png"></td></tr>
-</table>
-<br>
 
 ## 🔐 Configuration
 Créer le fichier suivant :
