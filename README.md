@@ -9,11 +9,10 @@ Pour chaque sujet, l’application propose :
 - un niveau de complexité (Débutant / Intermédiaire / Avancé),
 - les technologies recommandées.
 
-### Capture d'écran : 
-<table>
-    <tr><td><img src="./screenshot.png"></td>
-    <td><img src="./example/screenshot_output.png"></td></tr>
-</table>
+### Captures d'écran
+<img src="./screenshot.png">
+#### Exemple output
+<img src="./example/screenshot_output.png">
 
 ---
 
