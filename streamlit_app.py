@@ -17,22 +17,50 @@ client = OpenAI(base_url="https://router.huggingface.co/v1", api_key=hf_api_key)
 # ---------------- FONCTION LLM ----------------
 def generer_projets(sujet, nb_projets):
 
+    # prompt = f"""
+    # Tu dois répondre UNIQUEMENT par du JSON valide.
+
+    # Génère exactement {nb_projets} idées de projets informatiques
+    # sur le thème "{sujet}".
+
+    # Format attendu :
+    # [
+    #   {{
+    #     "titre": "",
+    #     "description": "",
+    #     "complexite": "Débutant | Intermédiaire | Avancé",
+    #     "technologies": []
+    #   }}
+    # ]
+    # """
     prompt = f"""
     Tu dois répondre UNIQUEMENT par du JSON valide.
+    Aucun texte, aucune explication hors du JSON.
 
     Génère exactement {nb_projets} idées de projets informatiques
     sur le thème "{sujet}".
 
+    Pour chaque projet :
+    - Le titre doit être clair et concret
+    - La description doit contenir 3 à 5 phrases expliquant :
+    - l’objectif du projet
+    - les principales fonctionnalités
+    - un cas d’usage réel
+    - La complexité doit être exactement l’une des valeurs suivantes :
+    "Débutant", "Intermédiaire" ou "Avancé"
+    - La liste des technologies doit contenir 3 à 6 éléments pertinents
+
     Format attendu :
     [
-      {{
-        "titre": "",
-        "description": "",
+    {{
+        "titre": "string",
+        "description": "string",
         "complexite": "Débutant | Intermédiaire | Avancé",
-        "technologies": []
-      }}
+        "technologies": ["string", "string"]
+    }}
     ]
     """
+
 
     completion = client.chat.completions.create(
         model="meta-llama/Llama-3.1-8B-Instruct:cerebras",
