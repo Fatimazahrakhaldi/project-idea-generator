@@ -6,7 +6,7 @@ import re
 
 # ---------------- CONFIG ----------------
 st.set_page_config(
-    page_title="Générateur d'idées de projets GenAI", page_icon="❉", layout="centered"
+    page_title="Générateur d'idées de projets GenAI", layout="centered"
 )
 
 hf_api_key = st.secrets["HF_API_KEY"]
@@ -17,22 +17,6 @@ client = OpenAI(base_url="https://router.huggingface.co/v1", api_key=hf_api_key)
 # ---------------- FONCTION LLM ----------------
 def generer_projets(sujet, nb_projets):
 
-    # prompt = f"""
-    # Tu dois répondre UNIQUEMENT par du JSON valide.
-
-    # Génère exactement {nb_projets} idées de projets informatiques
-    # sur le thème "{sujet}".
-
-    # Format attendu :
-    # [
-    #   {{
-    #     "titre": "",
-    #     "description": "",
-    #     "complexite": "Débutant | Intermédiaire | Avancé",
-    #     "technologies": []
-    #   }}
-    # ]
-    # """
     prompt = f"""
     Tu dois répondre UNIQUEMENT par du JSON valide.
     Aucun texte, aucune explication hors du JSON.
